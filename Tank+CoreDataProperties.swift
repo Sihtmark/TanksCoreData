@@ -20,12 +20,9 @@ extension Tank {
     @NSManaged public var rank: Int16
     @NSManaged public var type: String?
     @NSManaged public var country: Country?
-
+    
     public var wrappedTankName: String {
-        tankName ?? "Unknown tank"
-    }
-    public var wrappedType: String {
-        type ?? "Unknown type"
+        tankName ?? "Unknown tank name"
     }
 }
 

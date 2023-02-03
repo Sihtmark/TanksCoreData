@@ -35,10 +35,7 @@ extension Country {
 
     @objc(removeTanks:)
     @NSManaged public func removeFromTanks(_ values: NSSet)
-
-    public var wrappedCountry: String {
-        countryName ?? "Unknown country"
-    }
+    
     public var tankArray: [Tank] {
         let set = tanks as? Set<Tank> ?? []
         return set.sorted {

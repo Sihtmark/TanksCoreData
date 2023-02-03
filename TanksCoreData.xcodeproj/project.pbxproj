@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0377D16298D1EB300A78BC0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0377D15298D1EB300A78BC0 /* ViewModel.swift */; };
 		A0F542BB298BC091008313F8 /* TanksCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542BA298BC091008313F8 /* TanksCoreDataApp.swift */; };
 		A0F542BD298BC091008313F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542BC298BC091008313F8 /* ContentView.swift */; };
 		A0F542BF298BC092008313F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F542BE298BC092008313F8 /* Assets.xcassets */; };
 		A0F542C2298BC092008313F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F542C1298BC092008313F8 /* Preview Assets.xcassets */; };
 		A0F542CA298BC0A8008313F8 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0F542C8298BC0A8008313F8 /* DataModel.xcdatamodeld */; };
-		A0F542CC298BC208008313F8 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542CB298BC208008313F8 /* DataController.swift */; };
+		A0F542CC298BC208008313F8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542CB298BC208008313F8 /* CoreDataManager.swift */; };
 		A0F542D3298BE2E8008313F8 /* Tank+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542CF298BE2E8008313F8 /* Tank+CoreDataClass.swift */; };
 		A0F542D4298BE2E8008313F8 /* Tank+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542D0298BE2E8008313F8 /* Tank+CoreDataProperties.swift */; };
 		A0F542D5298BE2E8008313F8 /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542D1298BE2E8008313F8 /* Country+CoreDataClass.swift */; };
@@ -22,13 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0377D15298D1EB300A78BC0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A0F542B7298BC091008313F8 /* TanksCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanksCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F542BA298BC091008313F8 /* TanksCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksCoreDataApp.swift; sourceTree = "<group>"; };
 		A0F542BC298BC091008313F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A0F542BE298BC092008313F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0F542C1298BC092008313F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0F542C9298BC0A8008313F8 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		A0F542CB298BC208008313F8 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		A0F542CB298BC208008313F8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		A0F542CF298BE2E8008313F8 /* Tank+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tank+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		A0F542D0298BE2E8008313F8 /* Tank+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tank+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		A0F542D1298BE2E8008313F8 /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
@@ -78,7 +80,8 @@
 				A0F542BE298BC092008313F8 /* Assets.xcassets */,
 				A0F542C0298BC092008313F8 /* Preview Content */,
 				A0F542C8298BC0A8008313F8 /* DataModel.xcdatamodeld */,
-				A0F542CB298BC208008313F8 /* DataController.swift */,
+				A0F542CB298BC208008313F8 /* CoreDataManager.swift */,
+				A0377D15298D1EB300A78BC0 /* ViewModel.swift */,
 			);
 			path = TanksCoreData;
 			sourceTree = "<group>";
@@ -164,7 +167,8 @@
 				A0F542DA298CE366008313F8 /* EditTankView.swift in Sources */,
 				A0F542D3298BE2E8008313F8 /* Tank+CoreDataClass.swift in Sources */,
 				A0F542CA298BC0A8008313F8 /* DataModel.xcdatamodeld in Sources */,
-				A0F542CC298BC208008313F8 /* DataController.swift in Sources */,
+				A0377D16298D1EB300A78BC0 /* ViewModel.swift in Sources */,
+				A0F542CC298BC208008313F8 /* CoreDataManager.swift in Sources */,
 				A0F542D8298BEB04008313F8 /* AddTankView.swift in Sources */,
 				A0F542BD298BC091008313F8 /* ContentView.swift in Sources */,
 				A0F542BB298BC091008313F8 /* TanksCoreDataApp.swift in Sources */,

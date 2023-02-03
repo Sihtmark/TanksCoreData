@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var countries: FetchedResults<Country>
+    @StateObject var vm = ViewModel()
+    
     var body: some View {
         NavigationStack {
             List {
-                ForEach(countries, id: \.self) { country in
-                    Section(country.wrappedCountry) {
-                        ForEach(country.tankArray, id: \.self) { tank in
+                ForEach(vm.countries) { country in
+                    Section("\(country.countryName!)") {
+                        ForEach(country.tankArray) { tank in
                             NavigationLink {
-                                EditTankView(tank: tank)
+                                EditTankView(tank: $tank)
                             } label: {
                                 Text(tank.wrappedTankName)
                             }

@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct EditTankView: View {
+    
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
     
-    var tank: FetchedResults<Tank>.Element
+    @Binding var tank: Tank
     
     @State private var tankName   = ""
     @State private var tankType   = "Light tank"
@@ -55,7 +56,7 @@ struct EditTankView: View {
             }
             Button {
                 let int16: Int16 = Int16(tankRank)
-                DataController().editTank(tank: tank, name: tankName, type: tankType, rank: int16, origin: tankOrigin, context: moc)
+                .editTank(tank: tank, name: tankName, type: tankType, rank: int16, origin: tankOrigin, context: moc)
                 dismiss()
             } label: {
                 Text("Save")

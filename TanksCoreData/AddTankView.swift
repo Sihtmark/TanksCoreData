@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddTankView: View {
+    
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
     
@@ -47,7 +48,7 @@ struct AddTankView: View {
             }
             Button {
                 let int16: Int16 = Int16(tankRank)
-                DataController().addTank(name: tankName, type: tankType, rank: int16, origin: tankOrigin, context: moc)
+                CoreDataManager().addTank(name: tankName, type: tankType, rank: int16, origin: tankOrigin, context: moc)
                 dismiss()
             } label: {
                 Text("Save")
