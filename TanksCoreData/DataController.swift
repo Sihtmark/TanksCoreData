@@ -41,4 +41,14 @@ class DataController: ObservableObject {
         
         save(context: context)
     }
+    
+    func editTank(tank: Tank ,name: String, type: String, rank: Int16, origin: String, context: NSManagedObjectContext) {
+        let country = tank.country
+        tank.tankName = name
+        tank.type = type
+        tank.rank = rank
+        country!.countryName = origin
+        
+        save(context: context)
+    }
 }

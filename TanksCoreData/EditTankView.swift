@@ -1,15 +1,17 @@
 //
-//  AddTankView.swift
+//  EditTankView.swift
 //  TanksCoreData
 //
-//  Created by Sergei Poluboiarinov on 02.02.2023.
+//  Created by Sergei Poluboiarinov on 03.02.2023.
 //
 
 import SwiftUI
 
-struct AddTankView: View {
+struct EditTankView: View {
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
+    
+    var tank: FetchedResults<Tank>.Element
     
     @State private var tankName   = ""
     @State private var tankType   = "Light tank"
@@ -18,7 +20,13 @@ struct AddTankView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            TextField("Tank name", text: $tankName)
+            TextField(tank.tankName!, text: $tankName)
+                .onAppear {
+                    tankName = tank.tankName!
+                    tankType = tank.type!
+                    tankOrigin = tank.country!.countryName ?? "Germany"
+                    tankRank = Int(tank.rank)
+                }
             Picker(selection: $tankType, label: Text("Picker")) {
                 Text("Light tank").tag("Light tank")
                 Text("Medium tank").tag("Medium tank")
@@ -47,7 +55,7 @@ struct AddTankView: View {
             }
             Button {
                 let int16: Int16 = Int16(tankRank)
-                DataController().addTank(name: tankName, type: tankType, rank: int16, origin: tankOrigin, context: moc)
+                DataController().editTank(tank: tank, name: tankName, type: tankType, rank: int16, origin: tankOrigin, context: moc)
                 dismiss()
             } label: {
                 Text("Save")
@@ -55,11 +63,5 @@ struct AddTankView: View {
 
         }
         .padding()
-    }
-}
-
-struct AddTankView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddTankView()
     }
 }

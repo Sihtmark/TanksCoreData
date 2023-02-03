@@ -18,6 +18,7 @@
 		A0F542D5298BE2E8008313F8 /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542D1298BE2E8008313F8 /* Country+CoreDataClass.swift */; };
 		A0F542D6298BE2E8008313F8 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542D2298BE2E8008313F8 /* Country+CoreDataProperties.swift */; };
 		A0F542D8298BEB04008313F8 /* AddTankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542D7298BEB04008313F8 /* AddTankView.swift */; };
+		A0F542DA298CE366008313F8 /* EditTankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542D9298CE366008313F8 /* EditTankView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		A0F542D1298BE2E8008313F8 /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		A0F542D2298BE2E8008313F8 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		A0F542D7298BEB04008313F8 /* AddTankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTankView.swift; sourceTree = "<group>"; };
+		A0F542D9298CE366008313F8 /* EditTankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +73,12 @@
 				A0F542D2298BE2E8008313F8 /* Country+CoreDataProperties.swift */,
 				A0F542BA298BC091008313F8 /* TanksCoreDataApp.swift */,
 				A0F542BC298BC091008313F8 /* ContentView.swift */,
+				A0F542D7298BEB04008313F8 /* AddTankView.swift */,
+				A0F542D9298CE366008313F8 /* EditTankView.swift */,
 				A0F542BE298BC092008313F8 /* Assets.xcassets */,
 				A0F542C0298BC092008313F8 /* Preview Content */,
 				A0F542C8298BC0A8008313F8 /* DataModel.xcdatamodeld */,
 				A0F542CB298BC208008313F8 /* DataController.swift */,
-				A0F542D7298BEB04008313F8 /* AddTankView.swift */,
 			);
 			path = TanksCoreData;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F542DA298CE366008313F8 /* EditTankView.swift in Sources */,
 				A0F542D3298BE2E8008313F8 /* Tank+CoreDataClass.swift in Sources */,
 				A0F542CA298BC0A8008313F8 /* DataModel.xcdatamodeld in Sources */,
 				A0F542CC298BC208008313F8 /* DataController.swift in Sources */,
