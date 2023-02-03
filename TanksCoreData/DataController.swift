@@ -8,10 +8,6 @@
 import Foundation
 import CoreData
 
-enum CountryPicker: String {
-    case light, medium, heavy, destroyer, artily
-}
-
 class DataController: ObservableObject {
     let container = NSPersistentContainer(name: "DataModel")
     
@@ -23,5 +19,26 @@ class DataController: ObservableObject {
             }
             self.container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
         }
+    }
+    
+    func save(context: NSManagedObjectContext) {
+        do {
+            try context.save()
+            print("Data saved!!!")
+        } catch {
+            print("We could not save the Data...")
+        }
+    }
+    
+    func addTank(name: String, type: String, rank: Int16, origin: String, context: NSManagedObjectContext) {
+        let tank = Tank(context: context)
+        let country = Country(context: context)
+        tank.country = country
+        tank.tankName = name
+        tank.type = type
+        tank.rank = rank
+        country.countryName = origin
+        
+        save(context: context)
     }
 }

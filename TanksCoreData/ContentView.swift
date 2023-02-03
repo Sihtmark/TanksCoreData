@@ -17,7 +17,7 @@ struct ContentView: View {
                     Section(country.wrappedCountry) {
                         ForEach(country.tankArray, id: \.self) { tank in
                             NavigationLink {
-                                TankView(tank: tank)
+                                AddTankView()
                             } label: {
                                 Text(tank.wrappedTankName)
                             }

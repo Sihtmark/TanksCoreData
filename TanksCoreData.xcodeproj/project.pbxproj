@@ -13,7 +13,6 @@
 		A0F542C2298BC092008313F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F542C1298BC092008313F8 /* Preview Assets.xcassets */; };
 		A0F542CA298BC0A8008313F8 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0F542C8298BC0A8008313F8 /* DataModel.xcdatamodeld */; };
 		A0F542CC298BC208008313F8 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542CB298BC208008313F8 /* DataController.swift */; };
-		A0F542CE298BD08A008313F8 /* TankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542CD298BD08A008313F8 /* TankView.swift */; };
 		A0F542D3298BE2E8008313F8 /* Tank+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542CF298BE2E8008313F8 /* Tank+CoreDataClass.swift */; };
 		A0F542D4298BE2E8008313F8 /* Tank+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542D0298BE2E8008313F8 /* Tank+CoreDataProperties.swift */; };
 		A0F542D5298BE2E8008313F8 /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542D1298BE2E8008313F8 /* Country+CoreDataClass.swift */; };
@@ -29,7 +28,6 @@
 		A0F542C1298BC092008313F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0F542C9298BC0A8008313F8 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		A0F542CB298BC208008313F8 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		A0F542CD298BD08A008313F8 /* TankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankView.swift; sourceTree = "<group>"; };
 		A0F542CF298BE2E8008313F8 /* Tank+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tank+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		A0F542D0298BE2E8008313F8 /* Tank+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tank+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		A0F542D1298BE2E8008313F8 /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
@@ -77,7 +75,6 @@
 				A0F542C0298BC092008313F8 /* Preview Content */,
 				A0F542C8298BC0A8008313F8 /* DataModel.xcdatamodeld */,
 				A0F542CB298BC208008313F8 /* DataController.swift */,
-				A0F542CD298BD08A008313F8 /* TankView.swift */,
 				A0F542D7298BEB04008313F8 /* AddTankView.swift */,
 			);
 			path = TanksCoreData;
@@ -161,7 +158,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0F542CE298BD08A008313F8 /* TankView.swift in Sources */,
 				A0F542D3298BE2E8008313F8 /* Tank+CoreDataClass.swift in Sources */,
 				A0F542CA298BC0A8008313F8 /* DataModel.xcdatamodeld in Sources */,
 				A0F542CC298BC208008313F8 /* DataController.swift in Sources */,
