@@ -5,10 +5,11 @@
         <relationship name="tanks" toMany="YES" deletionRule="Nullify" destinationEntity="Tank" inverseName="country" inverseEntity="Tank"/>
     </entity>
     <entity name="Tank" representedClassName="Tank" syncable="YES">
+        <attribute name="content" attributeType="Transformable" valueTransformerName="UIImageTransformer" customClassName="UIImage"/>
         <attribute name="rank" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="tankName" attributeType="String"/>
         <attribute name="type" attributeType="String"/>
-        <relationship name="country" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="tanks" inverseEntity="Country"/>
+        <relationship name="country" maxCount="1" deletionRule="Cascade" destinationEntity="Country" inverseName="tanks" inverseEntity="Country"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="tankName"/>

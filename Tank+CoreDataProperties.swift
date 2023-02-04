@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreData
-
+import UIKit
 
 extension Tank {
 
@@ -20,6 +20,7 @@ extension Tank {
     @NSManaged public var rank: Int16
     @NSManaged public var type: String?
     @NSManaged public var country: Country?
+    @NSManaged public var content: UIImage?
 
     public var wrappedTankName: String {
         tankName ?? "Unknown tank"
