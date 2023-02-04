@@ -10,19 +10,33 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var countries: FetchedResults<Country>
+    
     var body: some View {
         NavigationStack {
             List {
                 ForEach(countries, id: \.self) { country in
-                    Section(country.wrappedCountry) {
+                    Section (content: {
                         ForEach(country.tankArray, id: \.self) { tank in
                             NavigationLink {
                                 EditTankView(tank: tank)
                             } label: {
                                 Text(tank.wrappedTankName)
                             }
+                            .swipeActions(edge: .leading, allowsFullSwipe: true) {
+                                Button(role: .destructive) {
+                                    DataController().deleteTank(tank: tank, context: moc)
+                                } label: {
+                                    Label("Delete", systemImage: "trash")
+                                }
+
+                            }
                         }
-                    }
+                    }, header: {
+                        Text(country.wrappedCountry)
+                            .font(.callout)
+                            .foregroundColor(.secondary)
+                            .fontWeight(.bold)
+                    })
                 }
             }
             .navigationTitle("World of Tanks")
@@ -35,6 +49,9 @@ struct ContentView: View {
                         Image(systemName: "plus")
                     }
 
+                }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
                 }
             }
         }

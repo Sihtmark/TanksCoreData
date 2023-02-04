@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A06D6F75298E213C002F9AAD /* ImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06D6F74298E213C002F9AAD /* ImageTransformer.swift */; };
 		A0F542BB298BC091008313F8 /* TanksCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542BA298BC091008313F8 /* TanksCoreDataApp.swift */; };
 		A0F542BD298BC091008313F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F542BC298BC091008313F8 /* ContentView.swift */; };
 		A0F542BF298BC092008313F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F542BE298BC092008313F8 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A06D6F74298E213C002F9AAD /* ImageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransformer.swift; sourceTree = "<group>"; };
 		A0F542B7298BC091008313F8 /* TanksCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanksCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F542BA298BC091008313F8 /* TanksCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksCoreDataApp.swift; sourceTree = "<group>"; };
 		A0F542BC298BC091008313F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				A0F542C0298BC092008313F8 /* Preview Content */,
 				A0F542C8298BC0A8008313F8 /* DataModel.xcdatamodeld */,
 				A0F542CB298BC208008313F8 /* DataController.swift */,
+				A06D6F74298E213C002F9AAD /* ImageTransformer.swift */,
 			);
 			path = TanksCoreData;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				A0F542D5298BE2E8008313F8 /* Country+CoreDataClass.swift in Sources */,
 				A0F542D4298BE2E8008313F8 /* Tank+CoreDataProperties.swift in Sources */,
 				A0F542D6298BE2E8008313F8 /* Country+CoreDataProperties.swift in Sources */,
+				A06D6F75298E213C002F9AAD /* ImageTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

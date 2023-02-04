@@ -9,6 +9,7 @@ import Foundation
 import CoreData
 
 class DataController: ObservableObject {
+    
     let container = NSPersistentContainer(name: "DataModel")
     
     init() {
@@ -38,9 +39,10 @@ class DataController: ObservableObject {
         tank.type = type
         tank.rank = rank
         country.countryName = origin
-        
         save(context: context)
     }
+    
+    
     
     func editTank(tank: Tank ,name: String, type: String, rank: Int16, origin: String, context: NSManagedObjectContext) {
         let country = tank.country
@@ -50,5 +52,9 @@ class DataController: ObservableObject {
         country!.countryName = origin
         
         save(context: context)
+    }
+    
+    func deleteTank(tank: Tank, context: NSManagedObjectContext) {
+        context.delete(tank)
     }
 }
